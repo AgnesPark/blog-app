@@ -12,7 +12,7 @@ export default function SignUpForm() {
   const navigate = useNavigate();
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    // e.preventDefault();
+    e.preventDefault();
     try {
       const auth = getAuth(app);
       await createUserWithEmailAndPassword(auth, email, password);
