@@ -13,7 +13,7 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_ID,
 };
 
-// import시 getApp을 하고, 그기 아니면 초기화시키기. import 할때마다 초기화시키는게 비효율적이기 때문
+// import시 getApp을 하고, 아니면 초기화시키기. import 할때마다 초기화시키는게 비효율적이기 때문
 try {
   app = getApp("app");
 } catch (e) {
